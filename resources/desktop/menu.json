@@ -1,0 +1,7 @@
+{
+  "leaf": false,
+  "children": [
+    { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+    { "text": "Login", "iconCls": "x-fa fa-card", "xtype": "loginview","leaf": true }
+  ]
+}

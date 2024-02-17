@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+	<title>JSDAYS4</title>
+
+  <script type="text/javascript">
+    var Ext = Ext || {};
+    Ext.beforeLoad = function (tags) {
+      //var s = location.search;
+      var profile;
+      profile = 'desktop';
+      Ext.manifest ='generatedFiles/' + profile;
+    };
+  </script>
+
+  <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+  <script id="microloader" data-app="6131ab0f-4862-4e1c-842f-384db4efccdb" type="text/javascript" src="generatedFiles/bootstrap.js"></script>
+</head>
+<body class="launching">
+  <div id="loadingSplash">
+      <div id="loadingSplashTop"></div>
+      <div id="loadingSplashBottom"></div>
+      <div class="loading-fading-circle" id="loadingSplashCircles">
+          <div class="loading-circle-1 loading-circle"></div>
+          <div class="loading-circle-2 loading-circle"></div>
+          <div class="loading-circle-3 loading-circle"></div>
+          <div class="loading-circle-4 loading-circle"></div>
+          <div class="loading-circle-5 loading-circle"></div>
+          <div class="loading-circle-6 loading-circle"></div>
+          <div class="loading-circle-7 loading-circle"></div>
+          <div class="loading-circle-8 loading-circle"></div>
+          <div class="loading-circle-9 loading-circle"></div>
+          <div class="loading-circle-10 loading-circle"></div>
+          <div class="loading-circle-11 loading-circle"></div>
+          <div class="loading-circle-12 loading-circle"></div>
+      </div>
+  </div>
+  
+  </body>
+</html>

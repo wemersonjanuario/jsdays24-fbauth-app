@@ -1,0 +1,103 @@
+@include panel-ui(
+        $ui: 'auth',
+          //$body-background-color: $auth-background-color,
+          //$border-width: 0 1px 1px 1px,
+          //$border-color: $auth-border-color,
+          //$body-padding: 30px,
+        $border-radius: 4px
+);
+
+
+@include button-ui(
+        $ui: 'facebook',
+        $color: #fff,
+        $icon-color: #fff,
+        $background-color: $social-facebook-btn-background,
+        $border-color: darken($social-facebook-btn-background, 5%)
+);
+
+@include button-ui(
+        $ui: 'twitter',
+        $color: #fff,
+        $icon-color: #fff,
+        $background-color: $social-twitter-btn-background,
+        $border-color: darken($social-twitter-btn-background, 5%)
+);
+
+@include button-ui(
+        $ui: 'green',
+        $color: #fff,
+        $icon-color: #fff,
+        $background-color: $color-soft-green,
+        $border-color: darken($color-soft-green, 5%)
+);
+
+@include button-ui(
+        $ui: 'gray',
+        $color: #fff,
+        $icon-color: #fff,
+        $background-color: $color-gray,
+        $border-color: darken($color-gray, 5%)
+);
+
+
+.auth-container {
+  @include background-size(cover);
+  background-image: $auth-background-image;
+  background-position: center;
+
+  //> .x-body-el {
+  //  background-color: rgba(black, 0.25);
+  //}
+  //
+  .x-formpanel {
+    //width: 400px;
+
+    .x-button {
+      // Balance button vertical spacing with form fields
+      margin: $field-vertical-spacing/2 0;
+
+      .x-big {
+        margin: $field-vertical-spacing-big/2 0;
+      }
+    }
+
+    .auth-clickable {
+      margin: 7px 0;
+      text-align: center;
+
+      & a {
+        color: $base-color !important;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //
+  .auth-header,
+  .auth-footer {
+    color: $color;
+    padding: 5px;
+    text-align: center;
+
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+
+
+  }
+
+  //$small-image-size: 36px;
+  //$logo-image-width: 36px;
+  //$logo-image-height: 36px;
+  //
+  $auth-header-height: 120px;
+
+  .auth-header-logo {
+    height: $auth-header-height;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+}
